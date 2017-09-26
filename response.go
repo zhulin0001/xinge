@@ -13,6 +13,10 @@
 // under the License.
 package xinge
 
+import (
+	"fmt"
+)
+
 type Response struct {
 	RetCode int         `json:"ret_code"`
 	ErrMsg  string      `json:"err_msg,omitempty"`
@@ -24,5 +28,5 @@ func (rsp *Response) OK() bool {
 }
 
 func (rsp *Response) Error() string {
-	return rsp.ErrMsg
+	return fmt.Sprintf("ret_code:%d", rsp.RetCode) + rsp.ErrMsg
 }
