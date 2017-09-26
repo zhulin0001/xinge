@@ -9,7 +9,7 @@ Installation
 
 安装腾讯信鸽go-sdk使用"go get"命令:
 
-    go get github.com/aiwuTech/xinge
+    go get github.com/zhulin0001/xinge
 
 
 Update
@@ -17,7 +17,7 @@ Update
 
 更新腾讯信鸽go-sdk使用"go get -u"命令
 
-    go get -u github.com/aiwuTech/xinge
+    go get -u github.com/zhulin0001/xinge
 
 Usage
 -----
