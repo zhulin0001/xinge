@@ -18,7 +18,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/aiwuTech/httpclient"
-	"log"
 	"net/url"
 	"sort"
 	"strings"
@@ -48,7 +47,7 @@ func (req *Request) Execute() (*Response, error) {
 		return nil, err
 	}
 
-	log.Println(string(body))
+// 	log.Println(string(body))
 	rspMsg := new(Response)
 	if err := json.Unmarshal(body, rspMsg); err != nil {
 		return nil, err
